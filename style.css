@@ -1,0 +1,231 @@
+
+/* ===== BASIC RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #0b0718;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #160d2b;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 1px solid #302052;
+    position: relative;
+}
+
+header h1 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header h1 span {
+    color: #38bdf8;
+}
+
+header p {
+    color: #aaa3bd;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+#themeToggle {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #302052;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ===== MAIN SECTION ===== */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+/* ===== WELCOME ===== */
+.welcome {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    color: #a99dbf;
+    font-size: 16px;
+}
+
+/* ===== CALCULATOR CARDS ===== */
+.calculator {
+    background: linear-gradient(145deg, #1b1231, #120c23);
+    border: 1px solid #39265d;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.calculator:hover {
+    border-color: #38bdf8;
+    transform: translateY(-3px);
+}
+
+.calculator h2 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+/* ===== LABELS ===== */
+label {
+    display: block;
+    margin: 15px 0 8px;
+    color: #ddd5ee;
+    font-size: 14px;
+}
+
+/* ===== INPUTS ===== */
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #49356b;
+    border-radius: 8px;
+    background: #0c0818;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.25);
+}
+
+input::placeholder {
+    color: #776b8d;
+}
+
+/* ===== BUTTONS ===== */
+.calculator button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #7139d8, #168de2);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calculator button:hover {
+    opacity: 0.85;
+    transform: scale(1.01);
+}
+
+/* ===== RESULTS ===== */
+.calculator h3 {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    background: #0c172b;
+    border: 1px solid #25466b;
+    color: #55c8ff;
+    font-size: 17px;
+}
+
+/* ===== SHOPPING BILL ===== */
+#billList {
+    margin-top: 18px;
+    color: #ddd5ee;
+}
+
+#billList p {
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #25183d;
+    border-radius: 7px;
+}
+
+#grandTotal {
+    color: #67e8b1;
+    border-color: #24634e;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #160d2b;
+    border-top: 1px solid #302052;
+    color: #a99dbf;
+    font-size: 13px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    #themeToggle {
+        right: 12px;
+        top: 15px;
+    }
+
+    main {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .welcome h2 {
+        font-size: 24px;
+    }
+
+    .calculator {
+        padding: 20px;
+    }
+
+    .calculator h2 {
+        font-size: 19px;
+    }
+}
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #49356b;
+    border-radius: 8px;
+    background: #0c0818;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+    outline: none;
+}
+
+select:focus {
+    border-color: #38bdf8;
+}
