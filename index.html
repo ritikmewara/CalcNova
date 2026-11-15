@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcNova - Smart Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Calc<span>Nova</span></h1>
+        <p>Smart Price & Quantity Calculator</p>
+        <button id="themeToggle">☀️</button>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+
+        <section class="welcome">
+            <h2>Welcome to CalcNova</h2>
+            <p>Calculate smarter, save time!</p>
+        </section>
+
+        <!-- Price to Quantity -->
+        <section class="calculator">
+            <h2>Price to Quantity</h2>
+
+            <label>Price per Unit (₹)</label>
+            <input type="number" id="unitPrice"
+                   placeholder="Enter price">
+
+            <label>Total Amount (₹)</label>
+            <input type="number" id="totalAmount"
+                   placeholder="Enter amount">
+
+            <button id="calculateQuantity">
+                Calculate Quantity
+            </button>
+
+            <h3 id="quantityResult">Result will appear here</h3>
+        </section>
+
+        <!-- Quantity to Price -->
+
+<section class="calculator">
+    <h2>Quantity to Price</h2>
+
+    <label>Price per Unit (₹)</label>
+    <input type="number" id="unitPrice2"
+           placeholder="Enter price">
+
+    <label>Quantity</label>
+    <input type="number" id="quantity"
+           placeholder="Enter quantity">
+
+    <label>Unit</label>
+    <select id="quantityUnit">
+        <option value="kg">Kilogram (KG)</option>
+        <option value="g">Gram (G)</option>
+        <option value="l">Litre (L)</option>
+        <option value="ml">Millilitre (ML)</option>
+        <option value="piece">Piece</option>
+    </select>
+
+    <button id="calculatePrice">
+        Calculate Price
+    </button>
+
+    <h3 id="priceResult">Result will appear here</h3>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CalcNova | Smart Calculations Made Easy</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
